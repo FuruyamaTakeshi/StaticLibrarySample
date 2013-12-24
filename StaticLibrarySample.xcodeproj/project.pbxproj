@@ -16,6 +16,9 @@
 		A426906B1869A00C008F6504 /* libStaticLibrarySample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A42690531869A00C008F6504 /* libStaticLibrarySample.a */; };
 		A42690711869A00C008F6504 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A426906F1869A00C008F6504 /* InfoPlist.strings */; };
 		A42690731869A00C008F6504 /* StaticLibrarySampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A42690721869A00C008F6504 /* StaticLibrarySampleTests.m */; };
+		A42690C51869AB18008F6504 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42690C31869AB18008F6504 /* CustomView.m */; };
+		A42690CC1869AB67008F6504 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42690CB1869AB67008F6504 /* Cocoa.framework */; };
+		A42690D61869AB67008F6504 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A42690D41869AB67008F6504 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,17 @@
 		A426906E1869A00C008F6504 /* StaticLibrarySampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StaticLibrarySampleTests-Info.plist"; sourceTree = "<group>"; };
 		A42690701869A00C008F6504 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A42690721869A00C008F6504 /* StaticLibrarySampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibrarySampleTests.m; sourceTree = "<group>"; };
+		A42690C21869AB18008F6504 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		A42690C31869AB18008F6504 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		A42690C41869AB18008F6504 /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		A42690CA1869AB67008F6504 /* StaticLibraryResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaticLibraryResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42690CB1869AB67008F6504 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		A42690CE1869AB67008F6504 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A42690CF1869AB67008F6504 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A42690D01869AB67008F6504 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A42690D31869AB67008F6504 /* StaticLibraryResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StaticLibraryResources-Info.plist"; sourceTree = "<group>"; };
+		A42690D51869AB67008F6504 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A42690D71869AB67008F6504 /* StaticLibraryResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaticLibraryResources-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +89,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A42690C71869AB67008F6504 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42690CC1869AB67008F6504 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,6 +105,7 @@
 			children = (
 				A42690581869A00C008F6504 /* StaticLibrarySample */,
 				A426906C1869A00C008F6504 /* StaticLibrarySampleTests */,
+				A42690D11869AB67008F6504 /* StaticLibraryResources */,
 				A42690551869A00C008F6504 /* Frameworks */,
 				A42690541869A00C008F6504 /* Products */,
 			);
@@ -93,6 +116,7 @@
 			children = (
 				A42690531869A00C008F6504 /* libStaticLibrarySample.a */,
 				A42690631869A00C008F6504 /* StaticLibrarySampleTests.xctest */,
+				A42690CA1869AB67008F6504 /* StaticLibraryResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +127,8 @@
 				A42690561869A00C008F6504 /* Foundation.framework */,
 				A42690641869A00C008F6504 /* XCTest.framework */,
 				A42690671869A00C008F6504 /* UIKit.framework */,
+				A42690CB1869AB67008F6504 /* Cocoa.framework */,
+				A42690CD1869AB67008F6504 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,6 +136,9 @@
 		A42690581869A00C008F6504 /* StaticLibrarySample */ = {
 			isa = PBXGroup;
 			children = (
+				A42690C21869AB18008F6504 /* CustomView.h */,
+				A42690C31869AB18008F6504 /* CustomView.m */,
+				A42690C41869AB18008F6504 /* CustomView.xib */,
 				A426905B1869A00C008F6504 /* StaticLibrarySample.h */,
 				A426905D1869A00C008F6504 /* StaticLibrarySample.m */,
 				A42690591869A00C008F6504 /* Supporting Files */,
@@ -139,6 +168,34 @@
 			children = (
 				A426906E1869A00C008F6504 /* StaticLibrarySampleTests-Info.plist */,
 				A426906F1869A00C008F6504 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A42690CD1869AB67008F6504 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A42690CE1869AB67008F6504 /* Foundation.framework */,
+				A42690CF1869AB67008F6504 /* CoreData.framework */,
+				A42690D01869AB67008F6504 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A42690D11869AB67008F6504 /* StaticLibraryResources */ = {
+			isa = PBXGroup;
+			children = (
+				A42690D21869AB67008F6504 /* Supporting Files */,
+			);
+			path = StaticLibraryResources;
+			sourceTree = "<group>";
+		};
+		A42690D21869AB67008F6504 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A42690D31869AB67008F6504 /* StaticLibraryResources-Info.plist */,
+				A42690D41869AB67008F6504 /* InfoPlist.strings */,
+				A42690D71869AB67008F6504 /* StaticLibraryResources-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,6 +238,23 @@
 			productReference = A42690631869A00C008F6504 /* StaticLibrarySampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A42690C91869AB67008F6504 /* StaticLibraryResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42690D81869AB67008F6504 /* Build configuration list for PBXNativeTarget "StaticLibraryResources" */;
+			buildPhases = (
+				A42690C61869AB67008F6504 /* Sources */,
+				A42690C71869AB67008F6504 /* Frameworks */,
+				A42690C81869AB67008F6504 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StaticLibraryResources;
+			productName = StaticLibraryResources;
+			productReference = A42690CA1869AB67008F6504 /* StaticLibraryResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +278,7 @@
 			targets = (
 				A42690521869A00C008F6504 /* StaticLibrarySample */,
 				A42690621869A00C008F6504 /* StaticLibrarySampleTests */,
+				A42690C91869AB67008F6504 /* StaticLibraryResources */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +292,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A42690C81869AB67008F6504 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42690D61869AB67008F6504 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -225,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A426905E1869A00C008F6504 /* StaticLibrarySample.m in Sources */,
+				A42690C51869AB18008F6504 /* CustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +317,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A42690731869A00C008F6504 /* StaticLibrarySampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42690C61869AB67008F6504 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +342,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				A42690701869A00C008F6504 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A42690D41869AB67008F6504 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A42690D51869AB67008F6504 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -390,6 +489,51 @@
 			};
 			name = Release;
 		};
+		A42690D91869AB67008F6504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StaticLibraryResources/StaticLibraryResources-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StaticLibraryResources/StaticLibraryResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A42690DA1869AB67008F6504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StaticLibraryResources/StaticLibraryResources-Prefix.pch";
+				INFOPLIST_FILE = "StaticLibraryResources/StaticLibraryResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +559,14 @@
 			buildConfigurations = (
 				A426907A1869A00C008F6504 /* Debug */,
 				A426907B1869A00C008F6504 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A42690D81869AB67008F6504 /* Build configuration list for PBXNativeTarget "StaticLibraryResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42690D91869AB67008F6504 /* Debug */,
+				A42690DA1869AB67008F6504 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
